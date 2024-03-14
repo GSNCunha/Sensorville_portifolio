@@ -3,12 +3,12 @@
   "/_error": "pages/_error.js",
   "/api/contact": "pages/api/contact.js",
   "/api/projects": "pages/api/projects.js",
-  "/": "pages/index.js",
   "/pessoal": "pages/pessoal.js",
   "/profissional": "pages/profissional.js",
   "/projects": "pages/projects.js",
   "/settings": "pages/settings.js",
   "/contact": "pages/contact.js",
+  "/": "pages/index.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

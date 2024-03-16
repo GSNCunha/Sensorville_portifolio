@@ -23,6 +23,28 @@
   background: rgba(131, 205, 41, 0.25);
 }
 
+.C {
+  border: 0.1rem solid rgb(67, 153, 52);
+}
+.C:hover {
+  background: rgba(67, 153, 52, 0.25);
+}
+
+.graphQl {
+  border: 0.1rem solid rgb(67, 153, 52);
+}
+.graphQl:hover {
+  background: rgba(67, 153, 52, 0.25);
+}
+
+.typescript {
+  border: 0.1rem solid rgb(97, 218, 251);
+}
+.typescript:hover {
+  background: rgba(97, 218, 251, 0.25);
+}
+
+
 .mongodb {
   border: 0.1rem solid rgb(67, 153, 52);
 }
@@ -51,6 +73,13 @@
   background: rgba(25, 118, 210, 0.25);
 }
 
+.java {
+  border: 0.1rem solid rgb(25, 118, 210);
+}
+.java:hover {
+  background: rgba(25, 118, 210, 0.25);
+}
+
 .bulma {
   border: 0.1rem solid rgb(0, 209, 178);
 }
@@ -64,6 +93,13 @@
 .next:hover {
   background: rgba(0, 112, 243, 0.25);
 }
+.aria {
+  border: 2px solid rgb(0, 112, 243);
+}
+.aria:hover {
+  background: rgba(0, 112, 243, 0.25);
+}
+
 
 .tailwind {
   border: 2px solid rgb(6, 182, 212);
@@ -84,4 +120,11 @@
 }
 .css-modules:hover {
   background: rgba(21, 114, 182, 0.25);
+}
+
+.bulma {
+  border: 0.1rem solid rgb(25, 118, 210);
+}
+.bulma:hover {
+  background: rgba(25, 118, 210, 0.25);
 }

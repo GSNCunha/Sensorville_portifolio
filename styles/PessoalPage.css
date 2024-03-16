@@ -1,0 +1,22 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-year {
+    margin-bottom: 20px;
+  }
+  
+  .timeline-year h4 {
+    margin-bottom: 10px;
+  }
+  
+  .timeline-year ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .timeline-year ul li {
+    margin-bottom: 5px;
+  }
+  

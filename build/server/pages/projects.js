@@ -47,7 +47,6 @@ __webpack_require__.d(__webpack_exports__, {
 var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(5675);
-var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 // EXTERNAL MODULE: ./styles/ProjectCard.module.css
 var ProjectCard_module = __webpack_require__(7068);
 var ProjectCard_module_default = /*#__PURE__*/__webpack_require__.n(ProjectCard_module);
@@ -59,11 +58,16 @@ const ProjectCard = ({ project  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: (ProjectCard_module_default()).card,
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+            /*#__PURE__*/ jsx_runtime_.jsx("img", {
                 src: project.image,
-                height: 300,
-                width: 600,
-                alt: project.name
+                alt: project.name,
+                style: {
+                    borderRadius: "10px",
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "cover",
+                    maxHeight: "165px"
+                }
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: (ProjectCard_module_default()).content,
@@ -81,24 +85,15 @@ const ProjectCard = ({ project  })=>{
                                 children: tag
                             }, tag))
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (ProjectCard_module_default()).cta,
-                        children: [
-                            project.source_code && /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                href: project.source_code,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: (ProjectCard_module_default()).underline,
-                                children: "Source Code"
-                            }),
-                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                href: project.demo,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: (ProjectCard_module_default()).underline,
-                                children: "Live Demo"
-                            })
-                        ]
+                        children: project.source_code && /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                            href: project.source_code,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: (ProjectCard_module_default()).underline,
+                            children: "Source Code"
+                        })
                     })
                 ]
             })
@@ -108,7 +103,7 @@ const ProjectCard = ({ project  })=>{
 /* harmony default export */ const components_ProjectCard = (ProjectCard);
 
 ;// CONCATENATED MODULE: ./pages/api/projects.json
-const projects_namespaceObject = JSON.parse('[{"id":1,"name":"Driwwwle","image":"https://imgur.com/kbGs6zH.png","description":"A platform for web developers to showcase their projects","tags":["next","node","mongodb","tailwind","react-query"],"source_code":"https://github.com/itsnitinr/driwwwle-v2","demo":"https://driwwwle.com/"},{"id":2,"name":"PCB Cupid","image":"https://imgur.com/tAZotn3.png","description":"E-commerce website for a PCB manufacturing company","tags":["react","node","mongodb","redux","razorpay","material-ui"],"demo":"https://www.pcbcupid.com/"},{"id":3,"name":"HealthyWays","image":"https://imgur.com/8FFqaX8.png","description":"A food ordering platform for healthy and home-cooked meals","tags":["react","node","mongodb","redux","razorpay","material-ui"],"source_code":"https://github.com/itsnitinr/healthyways","demo":"https://healthyways.herokuapp.com/"},{"id":4,"name":"VSCode Portfolio","image":"https://imgur.com/mKkz0iz.png","description":"A themeable and developer-centric portfolio based on the VSCode","tags":["next","css-modules"],"source_code":"https://github.com/itsnitinr/vscode-portfolio","demo":"http://vscode-portfolio.vercel.app/"}]');
+const projects_namespaceObject = JSON.parse('[{"id":1,"name":"Alarmicros","image":"https://i.imgur.com/4lZZafv.jpg","description":"Alarme residencial com microcontrolador arduino","tags":["C"],"source_code":"https://github.com/GSNCunha/alarmicros"},{"id":2,"name":"Armetro","image":"https://i.imgur.com/JVtutYO.png","description":"Simulação de funcionamento de um trem com controle de velocidade a partir de um cooler","tags":["C"],"source_code":"https://github.com/GSNCunha/Armetro"},{"id":3,"name":"Laboratório de sistemas digitais","image":"https://i.imgur.com/WUaM2Eg.png","description":"Ligação de uma FPGA a internet, pode ser controlada por um site em qualquer lugar do mundo","tags":["react","node","mongodb","graphQl","typescript"],"source_code":"https://github.com/GSNCunha/lab-sistemas"},{"id":4,"name":"E-commerce","image":"https://i.imgur.com/Cj8wrIj.png","description":"ecomerce construido para acessibilidade, pode ser navegado apensa a partir de um teclado, sem mouse","tags":["react"],"source_code":"https://github.com/GSNCunha/ecomerce"},{"id":5,"name":"Bow and Arrow","image":"https://i.imgur.com/zwajErh.png","description":"implementação do jogo bow and arrow feita puramente com ASCII","tags":["C"],"source_code":"https://github.com/GSNCunha/bow-and-arrow"},{"id":6,"name":"Taxi helper","image":"https://i.imgur.com/PhfYYPn.jpg","description":"implementação que avalia o melhor ponto de taxi a partir da distância de uma pessoa com diferentes pontos de Taxi.","tags":["java"],"source_code":"https://github.com/GSNCunha/taxi-helper"},{"id":7,"name":"Bulma-React-Functional-Calculator","image":"https://i.imgur.com/vtImdTa.jpg","description":"Calculadora construida com o framework Bulma, React e programada com Functional JavaScript(usa apenas uma variável em toda implementação)","tags":["react","node","bulma"],"source_code":"https://github.com/GSNCunha/bulma-react_functional_calculator"},{"id":8,"name":"Accessible Design Library for Web Development","image":"https://i.imgur.com/veaP3Sx.png","description":"Biblioteca de design acessivel, usa aria para a11y ","tags":["react","aria"],"source_code":"https://github.com/GSNCunha/react-scripts-js"}]');
 ;// CONCATENATED MODULE: ./pages/api/projects.js
 
 const getProjects = ()=>{
@@ -131,7 +126,7 @@ const ProjectsPage = ({ projects  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                children: "Stuff I've Built So Far"
+                children: "Projetos desenvolvidos"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: (ProjectsPage_module_default()).container,

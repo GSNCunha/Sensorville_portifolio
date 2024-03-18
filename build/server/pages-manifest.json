@@ -1,14 +1,14 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
-  "/api/projects": "pages/api/projects.js",
+  "/_error": "pages/_error.js",
   "/api/contact": "pages/api/contact.js",
-  "/": "pages/index.js",
+  "/api/projects": "pages/api/projects.js",
   "/contact": "pages/contact.js",
   "/pessoal": "pages/pessoal.js",
   "/profissional": "pages/profissional.js",
-  "/projects": "pages/projects.js",
   "/settings": "pages/settings.js",
+  "/projects": "pages/projects.js",
   "/_document": "pages/_document.js",
+  "/": "pages/index.js",
   "/404": "pages/404.html"
 }

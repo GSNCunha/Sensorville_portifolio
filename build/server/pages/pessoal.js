@@ -28,7 +28,7 @@ const PessoalPage = ()=>{
                     className: "timeline-year",
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                            children: "2023"
+                            children: "rthrthrth"
                         }),
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
                             children: [

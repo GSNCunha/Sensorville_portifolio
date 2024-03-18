@@ -27,7 +27,7 @@
     "id": 4,
     "name": "E-commerce",
     "image": "https://i.imgur.com/Cj8wrIj.png",
-    "description": "ecomerce construido para acessibilidade, pode ser navegado apensa a partir de um teclado, sem mouse",
+    "description": "Ecomerce construido para acessibilidade, pode ser navegado apensa a partir de um teclado, sem mouse",
     "tags": ["react"],
     "source_code": "https://github.com/GSNCunha/ecomerce"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "Bow and Arrow",
     "image": "https://i.imgur.com/zwajErh.png",
-    "description": "implementação do jogo bow and arrow feita puramente com ASCII",
+    "description": "Implementação do jogo bow and arrow feita puramente com ASCII",
     "tags": ["C"],
     "source_code": "https://github.com/GSNCunha/bow-and-arrow"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "name": "Taxi helper",
     "image": "https://i.imgur.com/PhfYYPn.jpg",
-    "description": "implementação que avalia o melhor ponto de taxi a partir da distância de uma pessoa com diferentes pontos de Taxi.",
+    "description": "Implementação que avalia o melhor ponto de taxi a partir da distância de uma pessoa com diferentes pontos de Taxi.",
     "tags": ["java"],
     "source_code": "https://github.com/GSNCunha/taxi-helper"
   },
@@ -62,5 +62,13 @@
     "description": "Biblioteca de design acessivel, usa aria para a11y ",
     "tags": ["react", "aria"],
     "source_code": "https://github.com/GSNCunha/react-scripts-js"
+  },
+  {
+    "id": 9,
+    "name": "Portifolio SensorVille",
+    "image": "https://i.imgur.com/YsFObd7.jpg",
+    "description": "Criado para me apresentar, para completar o processo seletivo da empresa SensorVille",
+    "tags": ["react", "node", "typescript"],
+    "source_code": "https://github.com/GSNCunha/vscode-portfolio"
   }
 ]

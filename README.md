@@ -18,6 +18,8 @@ Estas instruções irão ajudá-lo a obter uma cópia do projeto em execução e
 - Execute "yarn build" para a construção do ambiente.
 - Execute "yarn start" para iniciar o servidor de desenvolvimento.
 
+- O servidor vai rodar na porta 3000 e pode ser acessado usando a URL "http://localhost:3000/"
+
 ### Como funciona
 O site imita uma página do VSCode. Para navegar nele, basta clicar nas abas superiores ou laterais, assim como funciona a troca de arquivos no VSCode.
 

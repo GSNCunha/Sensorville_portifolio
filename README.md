@@ -1,49 +1,51 @@
-# vscode-portfolio
-[![Open is Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/itsnitinr/vscode-portfolio)
+# Site de Portfólio em React e Next
 
-A Visual Studio Code themed developer portfolio website built with Next.js and deployed on Vercel.
+## Começando
+Estas instruções irão ajudá-lo a obter uma cópia do projeto em execução em sua máquina local para fins de desenvolvimento e teste.
 
-![vscode-portfolio banner](https://imgur.com/JXJ9mpO.gif)
+### Pré-requisitos
+- Node.js (versão atualizada).
+- yarn(após baixar o node.js, basta rodar o comando "npm install --global yarn". se necessário, usar "sudo npm install --global yarn" para conceder privilégios de administrador ao comando) 
+- VSCode (editor de texto).
 
-## Features Roadmap
+- Para garantir que o Node.js ou yarn estão instalados, execute o comando "node --version" e "yarn --version" no terminal do computador. Se aparecer um número de versão, está tudo nos conformes.
 
-- [ ] Themes and customizations
-  - [x] GitHub Dark (default)
-  - [ ] One Dark Pro
-  - [x] Dracula
-  - [x] Ayu
-  - [x] Nord
-- [ ] Interactive custom terminal
+### Instalação
+- Clone ou baixe o repositório.
+- Abra o projeto em seu editor de código.
+- Abra um terminal ou prompt de comando e navegue até o diretório do projeto.
+- Execute "yarn" para instalar todas as dependências necessárias.
+- Execute "yarn build" para a construção do ambiente.
+- Execute "yarn start" para iniciar o servidor de desenvolvimento.
 
-For other features and themes suggestions, please open an issue.
+### Como funciona
+O site imita uma página do VSCode. Para navegar nele, basta clicar nas abas superiores ou laterais, assim como funciona a troca de arquivos no VSCode.
 
-## Environment Variables
+## Construído com
+- React.js
+- Next.js
+- HTML
+- CSS
+- JavaScript
 
-For fetching your articles from dev.to, create an `.env.local` file inside the project directory. Check the `.env.local.example` file for more information.
+## Autor
+Gabriel Sadigursky
 
-## Running Development Server
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Como navegar pelos arquivos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Como uma implementação em React como essa exige muitos arquivos, para fins de avaliação, aqui estão os caminhos para certas partes do código:
 
-All VSCode related components can be found in the `components` folder. To change the content of the portfolio, check out the `pages` folder. To add or remove pages, modify `components/Sidebar.jsx` and `components/Tabsbar.jsx`.
+1 - As páginas principais do site (trajetória pessoal, trajetória profissional, home, projetos...) são separadas em componentes do React. Cada componente exporta um JSX (código de HTML em JavaScript) e podem ser encontrados em "components/pages".
 
-## Next.js Resources
+2 - Os arquivos Pessoal.js e Profissional.js têm toda sua construção do HTML e CSS dentro dos arquivos, assim podem ser mais facilmente avaliados. Já as páginas de contato, projetos, configurações... usam outros componentes dentro de si, que são importados dos arquivos do diretório pai, assim como outras partes do site, como os botões laterais. Esses componentes são representados por tags com nomes especiais geralmente pintadas de verde. Foi usada uma API do site Imgur para trazer todas as fotos que estão nos cards de projeto, assim só precisa do link do site hospedador para exibir as imagens.
 
-To learn more about Next.js, take a look at the following resources:
+3 - Dentro de "components/pages/api", existe o arquivo projects.json que é onde estão todas as informações dos projetos, que serão usadas pelos componentes para imprimir todos os cards na página de projetos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4 - Dentro de "components", o componente ContactCode.js é onde contém todas as informações de contato que são exibidas no site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/)
+Qualquer dúvida, chamar no número (51) 99760-0101.
 
-## Deploy on Vercel
+Agradecimentos ao repositorio que serviu de base para a construcao desse site https://github.com/itsnitinr/vscode-portfolio?ref=reactjsexample.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

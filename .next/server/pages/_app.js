@@ -845,15 +845,15 @@ const CustomHead = ({ title  })=>{
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                 name: "description",
-                content: "Nitin Ranganath is an avid full stack web developer building websites and applications you'd love to use"
+                content: "Gabriel Sadigursky is an avid full stack web developer building websites and applications you'd love to use"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                 name: "keywords",
-                content: "nitin ranganath, nitin, ranganath, web developer portfolio, nitin web developer, nitin developer, mern stack, nitin ranganath portfolio, vscode-portfolio"
+                content: "Gabriel Sadigursky, nitin, ranganath, web developer portfolio, nitin web developer, nitin developer, mern stack, Gabriel Sadigursky portfolio, vscode-portfolio"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                 property: "og:title",
-                content: "Nitin Ranganath's Portfolio"
+                content: "Gabriel Sadigursky's Portfolio"
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                 property: "og:description",

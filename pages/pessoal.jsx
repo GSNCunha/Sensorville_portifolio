@@ -31,17 +31,17 @@ const PessoalPage = () => {
           border-color: #1572B6; /* Cor da borda para o ano de 2022 */
         }
         .esportes {
-          color: #F7DF1E; /* Cor para o ano de 2023 */
-          border-color: #F7DF1E; /* Cor da borda para o ano de 2023 */
+          color: #F7DF1E; /* Cor para a sessao de esportes */
+          border-color: #F7DF1E; /* Cor da borda para a sessao de esportes */
         }
   
         p {
           color: white; /* Cor do texto branco */
         }
       `}</style>
-      <div className="timeline">
-        <div className="item year-2020">
-          <span className="year">2013-2019</span>
+      <div className="timeline"> 
+        <div className="item year-2020"> 
+          <span className="year">2013-2019</span> 
           <h2>Formação escolar Sinodal</h2>
           <p>Durante o ensino médio, minha paixão pelo desenvolvimento de projetos era evidente, alimentando meu sonho de lançar uma startup focada em soluções de engenharia. Esses sonhos e ambições me levaram a dedicar meu tempo aos cursos de robótica e empreendedorismo, que se tornaram uma prioridade em minha vida, ocupando todas as minhas horas vagas, incluindo períodos de férias. Essa jornada foi incrivelmente gratificante, proporcionando um desenvolvimento pessoal significativo e permitindo que eu conhecesse pessoas inspiradoras que compartilhavam meu entusiasmo. Guardo com carinho todas as lições aprendidas e as conexões feitas ao longo desse período.</p>
         </div>
@@ -72,8 +72,8 @@ const PessoalPage = () => {
 
 export async function getStaticProps() {
   return {
-    props: { title: 'Pessoal' },
+    props: { title: 'Pessoal' }, // Retorna o título da página.
   };
 }
 
-export default PessoalPage;
+export default PessoalPage; // Exporta o componente PessoalPage para ser utilizado em outros lugares da aplicação.

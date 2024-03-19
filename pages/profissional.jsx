@@ -1,48 +1,50 @@
-const ProfissionalPage = () => {
+const ProfissionalPage = () => {// Define um componente de função chamado ProfissionalPage.
   return (
     <>
-      <style jsx>{`
+            <style jsx>{`  // Define estilos CSS específicos para esta página usando a sintaxe jsx.
         .timeline {
-          font-family: Arial, sans-serif;
+          font-family: Arial, sans-serif;  // Define a fonte para a linha do tempo.
         }
+        // Estilos para os itens da linha do tempo.
         .item {
-          margin-bottom: 20px;
-          border-left: 4px solid;
-          padding-left: 10px;
-          max-width: 50%; /* Define o limite de largura para metade da página */
+          margin-bottom: 20px;  // Define a margem inferior dos itens.
+          border-left: 4px solid;  // Define a borda esquerda dos itens.
+          padding-left: 10px;  // Define o preenchimento à esquerda dos itens.
+          max-width: 50%;  // Define a largura máxima dos itens para metade da página.
         }
         .year {
-          font-weight: bold;
-          font-size: 30px; /* Tamanho maior para as datas */
-          margin-right: 10px;
+          font-weight: bold;  // Define o peso da fonte para negrito.
+          font-size: 30px;  // Define o tamanho da fonte para as datas.
+          margin-right: 10px;  // Define a margem direita para as datas.
         }
+        // Estilos específicos para cada ano.
         .year-2020 {
-          color: #61DAFB; /* Cor para o ano de 2020 */
-          border-color: #61DAFB; /* Cor da borda para o ano de 2020 */
+          color: #61DAFB;  // Cor para o ano de 2020.
+          border-color: #61DAFB;  // Cor da borda para o ano de 2020.
         }
         .year-2021 {
-          color: #E34F26; /* Cor para o ano de 2021 */
-          border-color: #E34F26; /* Cor da borda para o ano de 2021 */
+          color: #E34F26;  // Cor para o ano de 2021.
+          border-color: #E34F26;  // Cor da borda para o ano de 2021.
         }
         .year-2022 {
-          color: #1572B6; /* Cor para o ano de 2022 */
-          border-color: #1572B6; /* Cor da borda para o ano de 2022 */
+          color: #1572B6;  // Cor para o ano de 2022.
+          border-color: #1572B6;  // Cor da borda para o ano de 2022.
         }
         .year-2023 {
-          color: #F7DF1E; /* Cor para o ano de 2023 */
-          border-color: #F7DF1E; /* Cor da borda para o ano de 2023 */
+          color: #F7DF1E;  // Cor para o ano de 2023.
+          border-color: #F7DF1E;  // Cor da borda para o ano de 2023.
         }
         .year-2024 {
-          color: #E34F26; /* Cor para o ano de 2023 */
-          border-color: #E34F26; /* Cor da borda para o ano de 2023 */
+          color: #E34F26;  // Cor para o ano de 2024.
+          border-color: #E34F26;  // Cor da borda para o ano de 2024.
         }
         p {
-          color: white; /* Cor do texto branco */
+          color: white;  // Cor do texto branco.
         }
       `}</style>
-      <div className="timeline">
-        <div className="item year-2020">
-          <span className="year">2020</span>
+      <div className="timeline"> 
+        <div className="item year-2020"> 
+          <span className="year">2020</span> 
           <h2>Engenharia de Controle e Automação</h2>
           <p>Minha jornada profissional teve início quando escolhi cursar Engenharia de Controle e Automação na UFRGS. Desde cedo, minha paixão pela robótica direcionou minhas escolhas, e optar por essa área foi uma decisão natural. A cada ano que passa, minha convicção de que fiz a escolha certa só se fortalece, pois encontro verdadeiro prazer em trabalhar nesse campo.</p>
         </div>
@@ -73,8 +75,8 @@ const ProfissionalPage = () => {
 
 export async function getStaticProps() {
   return {
-    props: { title: 'Profissional' },
+    props: { title: 'Profissional' }, // Retorna o título da página.
   };
 }
 
-export default ProfissionalPage;
+export default ProfissionalPage; // Exporta o componente ProfissionalPage para ser utilizado em outros lugares da aplicação.
